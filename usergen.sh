@@ -3,6 +3,9 @@
 file="/home/School"
 chmod 777 /home/School
 
+groupadd -f School
+sudo touch ${file}/notice.txt
+
 if [[  $# -eq 0 ]];
 then
 	for i in {1..5}
