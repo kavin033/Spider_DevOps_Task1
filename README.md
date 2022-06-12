@@ -15,10 +15,10 @@
 
 sign in to User Principal
 
-``git clone https://github.com/kavin033/Spider_DevOps_Task1.git``  
-``mv Spider_DevOps_Task1/* .``  
-``rm -rf Spider_DevOps_Task1``
-``chmod 700 usergen.sh permission.sh``
+``git clone https://github.com/kavin033/Spider_DevOps_Task1.git``     
+``mv Spider_DevOps_Task1/* .``      
+``rm -rf Spider_DevOps_Task1``   
+``chmod 700 usergen.sh permission.sh``   
 
 
 #### sign in to Root user while using ``usergen.sh`` and ``permission.sh``
