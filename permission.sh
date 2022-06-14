@@ -15,6 +15,7 @@ do
     chown teacher_${user}:${j} ${file}/${j}/teachernotice.txt
     chown Principal:${j} ${file}/${j}/principlenotice.txt
     sudo usermod -aG $j Principal
+    sudo usermod -aG School teacher_${user}
     sudo setfacl -R -m u:Principal:rwx ${file}/$j
     sudo chmod 770 ${file}/${j}
     cd $j
@@ -26,6 +27,7 @@ do
         sudo usermod -aG class_${user}_${stu} Principal
         sudo usermod -aG class_${user}_${stu} teacher_${user}
         sudo usermod -aG $j student_${user}_${stu}
+        sudo usermod -aG School student_${user}_${stu}
         sudo chmod 777 ${file}/$j/$i/*.txt
         sudo setfacl -R -m u:Principal:rwx ${file}/$j/$i
         sudo setfacl -R -m u:teacher_${user}:rwx ${file}/$j/$i
